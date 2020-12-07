@@ -11,7 +11,7 @@ Matrix::Matrix(int cols, int rows) : cols_(cols), rows_(rows)
 {   
     if (rows_ <= 0 || cols_ <= 0)
     {
-        throw out_of_range("Rozmiar macierzy powinien byc wiekszy niz 0  - Matrix::getValue");
+        throw invalid_argument(" Matrix::Matrix - Rozmiar macierzy powinien byc wiekszy niz 0");
     }
     allocSpace();
     for (int i = 0; i < cols_; ++i) {
@@ -25,7 +25,7 @@ Matrix::Matrix(int x) : rows_(x), cols_(x)
 {   
     if (rows_ <= 0 || cols_ <= 0)
     {
-        throw out_of_range("Rozmiar macierzy powinien byc wiekszy niz 0  - Matrix::getValue");
+        throw invalid_argument(" Matrix::Matrix - Rozmiar macierzy powinien byc wiekszy niz 0");
     }
     allocSpace();
     for (int i = 0; i < cols_; ++i) {
@@ -38,7 +38,7 @@ Matrix::Matrix(int x) : rows_(x), cols_(x)
 double Matrix::getValue(int cols, int rows)
 {
     if (rows < 0  || rows >= rows_ || cols < 0 || cols >= cols_) {
-        throw out_of_range("Poza zakresem - Matrix::getValue");
+        throw out_of_range(" Matrix::getValue - Poza zakresem");
     }
     return p[cols][rows];
 }
@@ -46,7 +46,7 @@ double Matrix::getValue(int cols, int rows)
 void Matrix::setValue(int cols, int rows, double val)
 {
     if (rows < 0 || rows >= rows_ || cols < 0 || cols >= cols_) {
-        throw out_of_range("Poza zakresem - Matrix::setValueAt");
+        throw out_of_range(" Matrix::setValue - Poza zakresem");
     }
     p[cols][rows] = val;
 }
@@ -54,7 +54,7 @@ void Matrix::setValue(int cols, int rows, double val)
 Matrix Matrix::sum(const Matrix &m2)
 {
     if (rows_ != m2.rows_ || cols_ != m2.cols_) {
-        throw invalid_argument("Nie mozna dodac tych macierzy - Matrix::sum");
+        throw invalid_argument(" Matrix::sum - Nie mozna dodac tych macierzy");
     }
 
     Matrix m_sum(cols_, rows_);
@@ -69,7 +69,7 @@ Matrix Matrix::sum(const Matrix &m2)
 Matrix Matrix::subtract(const Matrix &m2)
 {
     if (rows_ != m2.rows_ || cols_ != m2.cols_) {
-        throw invalid_argument("Nie mozna odjac tych macierzy - Matrix::subtract");
+        throw invalid_argument(" Matrix::subtract - Nie mozna odjac tych macierzy");
     }
 
     Matrix m_sub(cols_, rows_);
@@ -85,7 +85,7 @@ Matrix Matrix::multiply(const Matrix &m2)
 {
     if (rows_ != m2.cols_)
     {
-        throw invalid_argument("Nie mozna pomnozyc tych macierzy - Matrix::multiply");
+        throw invalid_argument(" Matrix::multiply - Nie mozna pomnozyc tych macierzy");
     }
 
     Matrix m_multiply(cols_, m2.rows_);
@@ -137,7 +137,7 @@ void Matrix::store(string filename, string path)
         file.close();
     }
     else {
-        throw runtime_error("Nie mozna utworzyc pliku: " + fullpath);
+        throw runtime_error(" Matrix::store - Nie mozna utworzyc pliku: " + fullpath);
     }
 }
 
@@ -152,7 +152,7 @@ Matrix::Matrix(string filename, string path)
 
         if (rows_ <= 0 || cols_ <= 0)
         {
-        throw out_of_range("Rozmiar macierzy powinien byc wiekszy niz 0  - Matrix::getValue");
+        throw invalid_argument(" Matrix::getValue - Rozmiar macierzy powinien byc wiekszy niz 0");
         }
 
         allocSpace();
@@ -164,7 +164,7 @@ Matrix::Matrix(string filename, string path)
     file.close();
     }
     else{
-        throw runtime_error("Nie mozna otworzyc pliku: " + fullpath);
+        throw runtime_error(" Matrix::Matrix - Nie mozna otworzyc pliku: " + fullpath);
     }
 }
 

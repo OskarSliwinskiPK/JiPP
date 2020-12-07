@@ -1,9 +1,90 @@
 #include <iostream>
 #include <matrix.h>
 
+
+void tests(){
+    cout << "----- Testy -----" << endl << endl;
+    try {
+        cout << "Tworzenie macierzy 0x2" << endl;
+        Matrix(0,2);   
+    } catch(invalid_argument &e)
+    {
+        cout << "[ERROR] " << e.what() << endl;
+    }
+
+    try {
+        cout << "Tworzenie macierzy -1x-1" << endl;
+        Matrix(-1);   
+    } catch(invalid_argument &e)
+    {
+        cout << "[ERROR] " << e.what() << endl;
+    }
+
+    Matrix mtests(3);
+    try {
+        cout << "Pobranie wartosci (-1,2) z macierzy 3x3" << endl;
+        mtests.getValue(-1,2);  
+    } catch(out_of_range &e)
+    {
+        cout << "[ERROR] " << e.what() << endl;
+    }
+
+    try {
+        cout << "Ustawienie wartosci (2,-3) w macierzy 3x3" << endl;
+        mtests.setValue(2,-3, 1);  
+    } catch(out_of_range &e)
+    {
+        cout << "[ERROR] " << e.what() << endl;
+    }
+
+    Matrix mtests2(2,3);
+    try {
+        cout << "Dodawanie macierzy 3x3 do 2x3" << endl;
+        mtests.sum(mtests2); 
+    } catch(invalid_argument &e)
+    {
+        cout << "[ERROR] " << e.what() << endl;
+    }
+    try {
+        cout << "Odejmowanie macierzy 3x3 do 2x3" << endl;
+        mtests.subtract(mtests2); 
+    } catch(invalid_argument &e)
+    {
+        cout << "[ERROR] " << e.what() << endl;
+    }
+
+    Matrix mtests3(3,2);
+    Matrix mtests4(5,4);
+    try {
+        cout << "Mnozenie macierzy 3x2 do 5x4" << endl;
+        mtests.multiply(mtests2); 
+    } catch(invalid_argument &e)
+    {
+        cout << "[ERROR] " << e.what() << endl;
+    }
+
+    try {
+        cout << "Proba zaladowania macierzy z nieistniejacego pliku" << endl;
+        Matrix mtestsfile = Matrix("m2.txt", "D:/Politechnika Studia");
+    } catch(runtime_error  &e)
+    {
+        cout << "[ERROR] " << e.what() << endl;
+    }
+
+    try {
+        cout << "Proba zapisania macierzy do blednej lokalizacji pliku" << endl;
+        mtests4.store("", "");
+    } catch(runtime_error  &e)
+    {
+        cout << "[ERROR] " << e.what() << endl;
+    }
+}
+
 int main()
 {
-    cout << "Tworzenie macierzy konstruktorem (int, int)";
+    tests();
+
+    cout << "\n\nTworzenie macierzy konstruktorem (int, int)";
     Matrix m1(4, 4);
     // ustawianie wartosci funckja setValue
     m1.setValue(0, 0, 1);

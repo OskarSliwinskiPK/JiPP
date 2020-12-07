@@ -18,3 +18,13 @@ iostream
 matrix.h
 -
 
+D:/Politechnika Studia/JiPP/Lab4/src/matrix.cpp
+matrix.h
+-
+stdexcept
+-
+fstream
+-
+string
+-
+
