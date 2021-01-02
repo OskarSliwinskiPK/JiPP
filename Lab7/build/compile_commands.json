@@ -1,0 +1,17 @@
+[
+{
+  "directory": "D:/Politechnika Studia/JiPP/Lab7/build",
+  "command": "\"D:/Program Files/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/g++.exe\"  @CMakeFiles/Lab7.dir/includes_CXX.rsp -g -o CMakeFiles/Lab7.dir/src/main.cpp.obj -c \"D:/Politechnika Studia/JiPP/Lab7/src/main.cpp\"",
+  "file": "D:/Politechnika Studia/JiPP/Lab7/src/main.cpp"
+},
+{
+  "directory": "D:/Politechnika Studia/JiPP/Lab7/build",
+  "command": "\"D:/Program Files/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/g++.exe\"  @CMakeFiles/Lab7.dir/includes_CXX.rsp -g -o CMakeFiles/Lab7.dir/src/employee.cpp.obj -c \"D:/Politechnika Studia/JiPP/Lab7/src/employee.cpp\"",
+  "file": "D:/Politechnika Studia/JiPP/Lab7/src/employee.cpp"
+},
+{
+  "directory": "D:/Politechnika Studia/JiPP/Lab7/build",
+  "command": "\"D:/Program Files/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/g++.exe\"  @CMakeFiles/Lab7.dir/includes_CXX.rsp -g -o CMakeFiles/Lab7.dir/src/hrms.cpp.obj -c \"D:/Politechnika Studia/JiPP/Lab7/src/hrms.cpp\"",
+  "file": "D:/Politechnika Studia/JiPP/Lab7/src/hrms.cpp"
+}
+]
