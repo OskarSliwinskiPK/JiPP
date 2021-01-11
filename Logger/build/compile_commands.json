@@ -1,0 +1,17 @@
+[
+{
+  "directory": "D:/Politechnika Studia/JiPP/Logger/build",
+  "command": "\"D:/Program Files/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/g++.exe\"  @CMakeFiles/logger.dir/includes_CXX.rsp -g -o CMakeFiles/logger.dir/src/main.cpp.obj -c \"D:/Politechnika Studia/JiPP/Logger/src/main.cpp\"",
+  "file": "D:/Politechnika Studia/JiPP/Logger/src/main.cpp"
+},
+{
+  "directory": "D:/Politechnika Studia/JiPP/Logger/build",
+  "command": "\"D:/Program Files/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/g++.exe\"  @CMakeFiles/logger.dir/includes_CXX.rsp -g -o CMakeFiles/logger.dir/src/Log.cpp.obj -c \"D:/Politechnika Studia/JiPP/Logger/src/Log.cpp\"",
+  "file": "D:/Politechnika Studia/JiPP/Logger/src/Log.cpp"
+},
+{
+  "directory": "D:/Politechnika Studia/JiPP/Logger/build",
+  "command": "\"D:/Program Files/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/gcc.exe\"  @CMakeFiles/logger.dir/includes_C.rsp -g -o CMakeFiles/logger.dir/libs/sqlite3/sqlite3.c.obj -c \"D:/Politechnika Studia/JiPP/Logger/libs/sqlite3/sqlite3.c\"",
+  "file": "D:/Politechnika Studia/JiPP/Logger/libs/sqlite3/sqlite3.c"
+}
+]

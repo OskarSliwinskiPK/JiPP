@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/log.h
+iostream
+-
+time.h
+-
+stdio.h
+-
+fstream
+-
+string.h
+-
+sqlite3/sqlite3.h
+-
+
+../libs/sqlite3/sqlite3.h
+stdarg.h
+-
+
+D:/Politechnika Studia/JiPP/Logger/src/Log.cpp
+log.h
+-
+time.h
+-
+stdio.h
+-
+fstream
+-
+cstdio
+-
+iostream
+-
+

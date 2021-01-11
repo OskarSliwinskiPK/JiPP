@@ -1,0 +1,3 @@
+D:/Politechnika Studia/JiPP/Logger/build/CMakeFiles/rebuild_cache.dir
+D:/Politechnika Studia/JiPP/Logger/build/CMakeFiles/logger.dir
+D:/Politechnika Studia/JiPP/Logger/build/CMakeFiles/edit_cache.dir

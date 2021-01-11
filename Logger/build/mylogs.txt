@@ -1,0 +1,67 @@
+[2021-01-04 23:00:10] [INFO ] Opened database successfully
+[2021-01-04 23:00:10] [INFO ] Error inserting data: %d. Your log: %s
+[2021-01-04 23:00:10] [DEBUG] --- Start ---
+[2021-01-04 23:00:10] [INFO ] ZACZYNAM
+[2021-01-04 23:00:10] [ERROR] Blad bledu bledu
+[2021-01-04 23:00:10] [WARN ] Uwaga Uwaga
+[2021-01-04 23:00:10] [DEBUG] pracuje sobie
+[2021-01-04 23:00:10] [DEBUG] dalej sobie pracuje
+[2021-01-04 23:00:10] [INFO ] 2 SEKUNDY PRZERWY
+[2021-01-04 23:00:12] [DEBUG] pracuje po przerwie
+[2021-01-04 23:00:12] [INFO ] KONCZE
+[2021-01-04 23:00:12] [DEBUG] --- Koniec ---
+[2021-01-04 23:04:03] [INFO ] Opened database successfully
+[2021-01-04 23:04:03] [DEBUG] --- Start ---
+[2021-01-04 23:04:03] [INFO ] ZACZYNAM
+[2021-01-04 23:04:03] [ERROR] Blad bledu bledu
+[2021-01-04 23:04:03] [WARN ] Uwaga Uwaga
+[2021-01-04 23:04:03] [DEBUG] pracuje sobie
+[2021-01-04 23:04:03] [DEBUG] dalej sobie pracuje
+[2021-01-04 23:04:03] [INFO ] 2 SEKUNDY PRZERWY
+[2021-01-04 23:04:05] [DEBUG] pracuje po przerwie
+[2021-01-04 23:04:05] [INFO ] KONCZE
+[2021-01-04 23:04:05] [DEBUG] --- Koniec ---
+[2021-01-04 23:04:21] [INFO ] Opened database successfully
+[2021-01-04 23:04:21] [DEBUG] --- Start ---
+[2021-01-04 23:04:21] [INFO ] ZACZYNAM
+[2021-01-04 23:04:22] [ERROR] Blad bledu bledu
+[2021-01-04 23:04:22] [WARN ] Uwaga Uwaga
+[2021-01-04 23:04:22] [DEBUG] pracuje sobie
+[2021-01-04 23:04:22] [DEBUG] dalej sobie pracuje
+[2021-01-04 23:04:22] [INFO ] 2 SEKUNDY PRZERWY
+[2021-01-04 23:04:24] [DEBUG] pracuje po przerwie
+[2021-01-04 23:04:24] [INFO ] KONCZE
+[2021-01-04 23:04:24] [DEBUG] --- Koniec ---
+[2021-01-04 23:06:33] [INFO ] Opened database successfully
+[2021-01-04 23:06:33] [DEBUG] --- Start ---
+[2021-01-04 23:06:33] [INFO ] ZACZYNAM
+[2021-01-04 23:06:33] [ERROR] Blad bledu bledu
+[2021-01-04 23:06:33] [WARN ] Uwaga Uwaga
+[2021-01-04 23:06:33] [DEBUG] pracuje sobie
+[2021-01-04 23:06:33] [DEBUG] dalej sobie pracuje
+[2021-01-04 23:06:33] [INFO ] 2 SEKUNDY PRZERWY
+[2021-01-04 23:06:35] [DEBUG] pracuje po przerwie
+[2021-01-04 23:06:35] [INFO ] KONCZE
+[2021-01-04 23:06:35] [DEBUG] --- Koniec ---
+[2021-01-04 23:07:11] [INFO ] Opened database successfully
+[2021-01-04 23:07:11] [DEBUG] --- Start ---
+[2021-01-04 23:07:11] [INFO ] ZACZYNAM
+[2021-01-04 23:07:11] [ERROR] Blad bledu bledu
+[2021-01-04 23:07:11] [WARN ] Uwaga Uwaga
+[2021-01-04 23:07:11] [DEBUG] pracuje sobie
+[2021-01-04 23:07:11] [DEBUG] dalej sobie pracuje
+[2021-01-04 23:07:11] [INFO ] 2 SEKUNDY PRZERWY
+[2021-01-04 23:07:13] [DEBUG] pracuje po przerwie
+[2021-01-04 23:07:13] [INFO ] KONCZE
+[2021-01-04 23:07:13] [DEBUG] --- Koniec ---
+[2021-01-04 23:08:34] [INFO ] Opened database successfully
+[2021-01-04 23:08:34] [DEBUG] --- Start ---
+[2021-01-04 23:08:34] [INFO ] ZACZYNAM
+[2021-01-04 23:08:34] [ERROR] Blad bledu bledu
+[2021-01-04 23:08:34] [WARN ] Uwaga Uwaga
+[2021-01-04 23:08:34] [DEBUG] pracuje sobie
+[2021-01-04 23:08:34] [DEBUG] dalej sobie pracuje
+[2021-01-04 23:08:34] [INFO ] 2 SEKUNDY PRZERWY
+[2021-01-04 23:08:36] [DEBUG] pracuje po przerwie
+[2021-01-04 23:08:36] [INFO ] KONCZE
+[2021-01-04 23:08:36] [DEBUG] --- Koniec ---
