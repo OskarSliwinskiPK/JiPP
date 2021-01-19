@@ -22,6 +22,14 @@ class Matrix {
         Matrix subtract(const Matrix &m2);
         Matrix multiply(const Matrix &m2);
         
+        // operatory
+        Matrix operator+ (Matrix m2);
+        Matrix operator- (Matrix m2);
+        Matrix operator* (Matrix m2);
+        friend ostream& operator<< (ostream &out, Matrix mat);
+        bool operator== (Matrix m2);
+        double* operator[](int i);
+
         int cols();
         int rows();
         void print();

@@ -40,14 +40,14 @@ void tests(){
     Matrix mtests2(2,3);
     try {
         cout << "Dodawanie macierzy 3x3 do 2x3" << endl;
-        mtests.sum(mtests2); 
+        mtests = mtests + mtests2; 
     } catch(invalid_argument &e)
     {
         cout << "[ERROR] " << e.what() << endl;
     }
     try {
         cout << "Odejmowanie macierzy 3x3 do 2x3" << endl;
-        mtests.subtract(mtests2); 
+        mtests = mtests - mtests2; 
     } catch(invalid_argument &e)
     {
         cout << "[ERROR] " << e.what() << endl;
@@ -57,7 +57,7 @@ void tests(){
     Matrix mtests4(5,4);
     try {
         cout << "Mnozenie macierzy 3x2 do 5x4" << endl;
-        mtests.multiply(mtests2); 
+        mtests = mtests * mtests2; 
     } catch(invalid_argument &e)
     {
         cout << "[ERROR] " << e.what() << endl;
@@ -109,9 +109,12 @@ int main()
 
     cout << endl << "Pobieram macierz 2 z pliku";
     Matrix m2 = Matrix("m2.txt", "D:/Politechnika Studia/JiPP/Lab4");
+    Matrix m7 = Matrix("m2.txt", "D:/Politechnika Studia/JiPP/Lab4");
     m2.print();
+    cout << endl << "Wynik porownywanie tych samych macierzy:   " << (m2==m7) << endl;
+    cout << "1 = True   0 = False" << endl;
     cout << endl << "Mnozenie m2*m1";
-    Matrix m3 = m2.multiply(m1);
+    Matrix m3 = m2 * m1;
     m3.print();
     cout << endl << "Wynik mnozenia zapisuje do pliku m3.txt" << endl;
     cout << "Liczba kolumn w m3.txt: " << m3.rows() << endl << "Liczba wierszy: " << m3.cols() << endl;
@@ -129,12 +132,14 @@ int main()
     m4.print();
 
     cout << endl << "Dodawanie m1+m1";
-    Matrix m5 = m1.sum(m1);
+    Matrix m5 = m1 + m1;
     m5.print();
 
     cout << endl << "Odejmowanie m5-m1";
-    Matrix m6 = m5.subtract(m1);
+    Matrix m6 = m5 - m1;
     m6.print();
+
+
 
     return 0;
 }

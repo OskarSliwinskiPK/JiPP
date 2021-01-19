@@ -2,6 +2,7 @@
 #include <stdexcept>
 #include <fstream>
 #include <string>
+#include <math.h>
 
 using namespace std;
 
@@ -51,7 +52,7 @@ void Matrix::setValue(int cols, int rows, double val)
     p[cols][rows] = val;
 }
 
-Matrix Matrix::sum(const Matrix &m2)
+Matrix Matrix::operator+(Matrix m2)
 {
     if (rows_ != m2.rows_ || cols_ != m2.cols_) {
         throw invalid_argument(" Matrix::sum - Nie mozna dodac tych macierzy");
@@ -66,7 +67,7 @@ Matrix Matrix::sum(const Matrix &m2)
     return m_sum;
 }
 
-Matrix Matrix::subtract(const Matrix &m2)
+Matrix Matrix::operator-(Matrix m2)
 {
     if (rows_ != m2.rows_ || cols_ != m2.cols_) {
         throw invalid_argument(" Matrix::subtract - Nie mozna odjac tych macierzy");
@@ -81,7 +82,7 @@ Matrix Matrix::subtract(const Matrix &m2)
     return m_sub;
 }
 
-Matrix Matrix::multiply(const Matrix &m2)
+Matrix Matrix::operator*(Matrix m2)
 {
     if (rows_ != m2.cols_)
     {
@@ -166,6 +167,20 @@ Matrix::Matrix(string filename, string path)
     else{
         throw runtime_error(" Matrix::Matrix - Nie mozna otworzyc pliku: " + fullpath);
     }
+}
+
+bool Matrix::operator==(Matrix m2) {
+    if (rows_ != m2.rows_ || cols_ != m2.cols_) {
+        throw invalid_argument(" Matrix::operator== - Nie mozna porownac tych macierzy");
+        return false;
+    }
+
+    for (int i = 0; i < rows_; i++)
+        for (int j = 0; j < cols_; j++)
+            if (fabs(p[i][j] - m2.p[i][j] > 0.0000000001))
+                return false;
+
+    return true;
 }
 
 // Private functions
