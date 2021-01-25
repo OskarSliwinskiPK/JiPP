@@ -1,0 +1,3 @@
+D:/Politechnika Studia/JiPP/Thread/build/CMakeFiles/lab8.dir
+D:/Politechnika Studia/JiPP/Thread/build/CMakeFiles/edit_cache.dir
+D:/Politechnika Studia/JiPP/Thread/build/CMakeFiles/rebuild_cache.dir

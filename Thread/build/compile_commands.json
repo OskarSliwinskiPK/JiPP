@@ -1,0 +1,7 @@
+[
+{
+  "directory": "D:/Politechnika Studia/JiPP/Thread/build",
+  "command": "\"D:/Program Files/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/i686-w64-mingw32-g++.exe\"  @CMakeFiles/lab8.dir/includes_CXX.rsp -g -o CMakeFiles/lab8.dir/src/lab8.cpp.obj -c \"D:/Politechnika Studia/JiPP/Thread/src/lab8.cpp\"",
+  "file": "D:/Politechnika Studia/JiPP/Thread/src/lab8.cpp"
+}
+]
