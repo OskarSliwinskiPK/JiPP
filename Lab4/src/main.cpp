@@ -139,7 +139,21 @@ int main()
     Matrix m6 = m5 - m1;
     m6.print();
 
+    cout << endl << "Operacja --m6";
+    --m6;
+    m6.print();
 
+    cout << endl << "Operacja m6+=3";
+    m6+=3;
+    m6.print();
+
+    cout << endl << "Sprawdzenie czy suma elementów m6 < 600";
+    if(m6<600){
+        cout << "True" << endl;
+    }
+    else {
+        cout << "False" << endl;
+    }
 
     return 0;
 }

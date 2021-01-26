@@ -65,3 +65,14 @@
 [2021-01-04 23:08:36] [DEBUG] pracuje po przerwie
 [2021-01-04 23:08:36] [INFO ] KONCZE
 [2021-01-04 23:08:36] [DEBUG] --- Koniec ---
+[2021-01-11 18:49:22] [INFO ] Opened database successfully
+[2021-01-11 18:49:22] [DEBUG] --- Start ---
+[2021-01-11 18:49:22] [INFO ] ZACZYNAM
+[2021-01-11 18:49:22] [ERROR] Blad bledu bledu
+[2021-01-11 18:49:22] [WARN ] Uwaga Uwaga
+[2021-01-11 18:49:22] [DEBUG] pracuje sobie
+[2021-01-11 18:49:22] [DEBUG] dalej sobie pracuje
+[2021-01-11 18:49:22] [INFO ] 2 SEKUNDY PRZERWY
+[2021-01-11 18:49:24] [DEBUG] pracuje po przerwie
+[2021-01-11 18:49:24] [INFO ] KONCZE
+[2021-01-11 18:49:24] [DEBUG] --- Koniec ---

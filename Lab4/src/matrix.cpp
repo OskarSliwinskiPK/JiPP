@@ -177,10 +177,74 @@ bool Matrix::operator==(Matrix m2) {
 
     for (int i = 0; i < rows_; i++)
         for (int j = 0; j < cols_; j++)
-            if (fabs(p[i][j] - m2.p[i][j] > 0.0000000001))
+            if (p[i][j] != m2.p[i][j])
                 return false;
 
     return true;
+}
+
+void Matrix::operator--()
+{
+    for(int i=0;i<rows_;i++)
+        {
+        
+            for(int j=0;j<cols_;j++)
+            {
+                p[i][j]--;
+            }
+        }
+}
+
+void Matrix::operator-=(double dod)
+{
+    for(int i=0;i<rows_;i++)
+        {
+        
+            for(int j=0;j<cols_;j++)
+            {
+                p[i][j]-=dod;
+            }
+        }
+}
+
+void Matrix::operator+=(double dod)
+{
+    for(int i=0;i<rows_;i++)
+        {
+        
+            for(int j=0;j<cols_;j++)
+            {
+                p[i][j]+=dod;
+            }
+        }
+}
+
+bool Matrix::operator<(double check)
+{
+        for(int i=0;i<rows_;i++)
+        {
+        
+            for(int j=0;j<cols_;j++)
+            {
+                if(p[i][j] > check)
+                {
+                    return false;
+                }
+            }
+        }
+        return true;
+}
+
+double* Matrix::operator[](int wiersz)
+{
+    wiersz--;
+    double *tabpom;
+    tabpom=new double[cols_+1];
+    for(int i=0;i<=cols_;i++)
+    {
+        tabpom[i]=p[wiersz][i];
+    }
+    return tabpom;
 }
 
 // Private functions

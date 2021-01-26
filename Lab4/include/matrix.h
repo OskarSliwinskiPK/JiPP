@@ -26,9 +26,12 @@ class Matrix {
         Matrix operator+ (Matrix m2);
         Matrix operator- (Matrix m2);
         Matrix operator* (Matrix m2);
-        friend ostream& operator<< (ostream &out, Matrix mat);
-        bool operator== (Matrix m2);
-        double* operator[](int i);
+        void operator-- ();
+        void operator+=(double);
+        void operator-=(double);
+        bool operator<(double);
+        bool operator==(Matrix);
+        double* operator[](int);
 
         int cols();
         int rows();
